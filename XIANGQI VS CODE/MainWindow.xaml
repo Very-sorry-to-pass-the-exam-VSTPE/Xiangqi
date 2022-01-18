@@ -1,0 +1,208 @@
+﻿<Window x:Class="象棋.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:象棋"
+        mc:Ignorable="d"
+        Title="中国象棋" Height="800" Width="746">
+
+
+
+    <Grid MouseDown="Grid_Click">
+        <Image Source="photos/棋盘.png" HorizontalAlignment="Left" Width="726" Height="772" VerticalAlignment="Top" Margin="10,0,0,0"  />
+
+        <Button x:Name="Car_Red_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83"  Margin="0,0,0,0" Click="choosePiece" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红车.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Horse_Red_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83"  Margin="83,0,0,0" Click="choosePiece" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红马.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Elephant_Red_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="166,0,0,0" Click="choosePiece" BorderBrush="White"  >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红相.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Warrior_Red_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83"  Margin="249,0,0,0" Click="choosePiece" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红士.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="General_Red" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83"  Margin="332,0,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红帅..png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Warrior_Red_2" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="415,0,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红士.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Elephant_Red_2" Margin="498,0,0,0" HorizontalAlignment="Left" Width="83" Height="78"  VerticalAlignment="Top" Click="choosePiece" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红相.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Horse_Red_2" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="581,0,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红马.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Car_Red_2" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="664,0,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红车.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Canon_Red_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="83,156,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红炮.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Canon_Red_2" VerticalAlignment="Top" Height="78"  HorizontalAlignment="Left" Width="83" Margin="581,156,0,0" Click="choosePiece" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红炮.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Soldier_Red_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="0,234,0,0" Click="choosePiece" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红兵.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Soldier_Red_2" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="166,234,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红兵.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Soldier_Red_3" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="332,234,0,0" Click="choosePiece" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红兵.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Soldier_Red_4" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="498,234,0,0" Click="choosePiece" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红兵.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Soldier_Red_5" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="664,234,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/红兵.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Car_Black_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="0,702,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑车.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Horse_Black_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="83,702,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑马.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Elephant_Black_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="166,702,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑象.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Warrior_Black_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="249,702,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑仕.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="General_Black" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="332,702,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑将.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Warrior_Black_2" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="415,702,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑仕.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Elephant_Black_2" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="498,702,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑象.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Horse_Black_2" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="581,702,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑马.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Car_Black_2" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="664,702,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑车.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Canon_Black_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="83,546,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑炮.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Canon_Black_2" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="581,546,0,0" Click="choosePiece" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑炮.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Soldier_Black_1" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="0,468,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑卒.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Soldier_Black_2" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="166,468,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑卒.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Soldier_Black_3" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="332,468,0,0" Click="choosePiece" BorderBrush="White">
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑卒.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Soldier_Black_4" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="498,468,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑卒.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="Soldier_Black_5" Height="78" VerticalAlignment="Top" HorizontalAlignment="Left" Width="83" Margin="664,468,0,0" Click="choosePiece" BorderBrush="White" >
+            <Button.Background>
+                <ImageBrush ImageSource="photos/黑卒.png" Stretch="Fill"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Window>

@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="music\eat.wav" />
+    <None Remove="music\move.wav" />
+    <None Remove="music\victory.wav" />
+    <None Remove="photos\hongshuai.png" />
+    <None Remove="photos\棋子.png" />
+    <None Remove="photos\棋盘.png" />
+    <None Remove="photos\红兵.png" />
+    <None Remove="photos\红士.png" />
+    <None Remove="photos\红帅..png" />
+    <None Remove="photos\红帅.png" />
+    <None Remove="photos\红炮.png" />
+    <None Remove="photos\红相.png" />
+    <None Remove="photos\红车.png" />
+    <None Remove="photos\红马.png" />
+    <None Remove="photos\黑仕.png" />
+    <None Remove="photos\黑卒.png" />
+    <None Remove="photos\黑将.png" />
+    <None Remove="photos\黑炮.png" />
+    <None Remove="photos\黑象.png" />
+    <None Remove="photos\黑车.png" />
+    <None Remove="photos\黑马.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="music\eat.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="music\move.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="music\victory.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="photos\棋盘.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="photos\红兵.png" />
+    <Resource Include="photos\红士.png" />
+    <Resource Include="photos\红帅..png" />
+    <Resource Include="photos\红炮.png" />
+    <Resource Include="photos\红相.png" />
+    <Resource Include="photos\红车.png" />
+    <Resource Include="photos\红马.png" />
+    <Resource Include="photos\黑仕.png" />
+    <Resource Include="photos\黑卒.png" />
+    <Resource Include="photos\黑将.png" />
+    <Resource Include="photos\黑炮.png" />
+    <Resource Include="photos\黑象.png" />
+    <Resource Include="photos\黑车.png" />
+    <Resource Include="photos\黑马.png" />
+  </ItemGroup>
+
+</Project>
